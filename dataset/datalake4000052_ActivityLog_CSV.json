@@ -10,6 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
+				"fileName": "ActivityLog01.csv",
 				"fileSystem": "data"
 			},
 			"columnDelimiter": ",",
@@ -17,6 +18,51 @@
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
 		},
-		"schema": []
+		"schema": [
+			{
+				"name": "Correlationid",
+				"type": "String"
+			},
+			{
+				"name": "Operationname",
+				"type": "String"
+			},
+			{
+				"name": "Status",
+				"type": "String"
+			},
+			{
+				"name": "Eventcategory",
+				"type": "String"
+			},
+			{
+				"name": "Level",
+				"type": "String"
+			},
+			{
+				"name": "Time",
+				"type": "String"
+			},
+			{
+				"name": "Subscription",
+				"type": "String"
+			},
+			{
+				"name": "Eventinitiatedby",
+				"type": "String"
+			},
+			{
+				"name": "Resourcetype",
+				"type": "String"
+			},
+			{
+				"name": "Resourcegroup",
+				"type": "String"
+			},
+			{
+				"name": "Resource",
+				"type": "String"
+			}
+		]
 	}
 }
